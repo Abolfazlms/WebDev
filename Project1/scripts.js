@@ -3,15 +3,31 @@ function dragElement(terrariumElement){
     let pos1 = 0,
     pos2 = 0,
     pos3 = 0,
-    pos4 = 0;    
+    pos4 = 0;        
     terrariumElement.onpointerdown = pointerDrag;
-
+    
     function pointerDrag(element){
         element.preventDefault();
         console.log(element);
         pos3 = element.clientX;
         pos4 = element.clientY;
-    }    
+        document.onpointermove = elementDrag;
+        document.onpointerup = stopElementDrag;
+    }   
+    function elementDrag(element){
+        pos1 = pos3 - element.clientX;
+        pos2 = pos4 - element.clientY;
+        pos3 = element.clientX;
+        pos4 = element.clientY;
+        console.log(pos1,pos2,pos3,pos4);
+        terrariumElement.style.top = terrariumElement.offsetTop - pos2 + 'px';
+        terrariumElement.style.left = terrariumElement.offsetLeft - pos1 + 'px';
+    } 
+    function stopElementDrag() {
+        document.onpointerup = null;
+        document.onpointermove = null;
+    }
+
 }
  
 
