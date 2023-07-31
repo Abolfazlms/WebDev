@@ -1,4 +1,3 @@
-alert('test');
 let id;//for clear interval
 function fadeOut(){
     id = setInterval(hide,20);
