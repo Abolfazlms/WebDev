@@ -2,6 +2,7 @@ let intervalId;
 let width = 500;
 let unit = 2;
 function increase(){
+    clearInterval(intervalId);
     intervalId = setInterval(expand,20);
 }
 function expand(){
@@ -14,6 +15,7 @@ function expand(){
     }
 }
 function decrease(){
+    clearInterval(intervalId);
     intervalId = setInterval(shrink,20);
 }
 function shrink(){
