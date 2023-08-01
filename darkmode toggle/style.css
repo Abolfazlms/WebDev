@@ -11,3 +11,8 @@ body{
     font-size: 18px;
     font-weight: bold;
 }
+.toggle-container{
+    position: fixed;
+    top: 10px;
+    right: 30px;
+}
