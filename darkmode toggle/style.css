@@ -10,6 +10,7 @@ body{
     flex-direction: column;
     font-size: 18px;
     font-weight: bold;
+    transition: background 0.3s linear, color 0.3s linear;
 }
 .toggle-container{
     position: fixed;
