@@ -9,3 +9,14 @@ body{
     min-height: 100vh;
     flex-direction: column;
 }
+.heart{
+    position:fixed;
+    top: -5vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+    }
+}
