@@ -9,5 +9,10 @@ window.onload = function(){
         notification.classList.add('toast');
         notification.innerText = 'Test notification';
         container.appendChild(notification);
+
+        setTimeout(function(){
+            notification.remove();
+        },2000);
     }
+   
 }
