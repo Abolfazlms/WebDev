@@ -10,5 +10,5 @@ window.onload = function(){
             heart.remove()
         },4000);
     }
-    setInterval(createHeart,150);
+    setInterval(createHeart,300);
 }
