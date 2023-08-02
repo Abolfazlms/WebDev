@@ -10,5 +10,28 @@ body{
     flex-direction: column;
     font-size: 18px;
     font-weight: bold;
-    transition: background 0.3s linear, color 0.3s linear;
+}
+button{
+    background-color: yellow;
+    color: black;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+.popup{
+    background-color: white;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    position: relative;
+}
+.popup button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    padding: 1.5rem;
+    color: black;
+    font-size: 18px;
 }
