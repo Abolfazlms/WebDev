@@ -7,5 +7,11 @@ window.onload = function(){
         document.body.style.background = 'rgba(0, 0, 0, 0.5)';
         open.style.display = 'none';
         popup.classList.add('active');
-    })
+    });
+
+    close.addEventListener('click',function(){
+        document.body.style.background = '#fff';
+        open.style.display = 'block';
+        popup.classList.remove('active');
+    });
 } 
